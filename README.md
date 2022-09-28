@@ -9,13 +9,13 @@ This is a GRPC client package of [CosmosContracts/juno](https://github.com/Cosmo
 
 **proto files**
 
-- see [juno/go.mod at v9.0.0](https://github.com/CosmosContracts/juno/blob/v9.0.0/go.mod) for listing related
+- see [juno/go.mod at v10.0.2](https://github.com/CosmosContracts/juno/blob/v10.0.2/go.mod) for listing related
 packages versions.
 - and also [cosmos-sdk/go.mod at v0.45.6](https://github.com/cosmos/cosmos-sdk/blob/v0.45.6/go.mod)
 
 ---
 
-- [juno/proto/juno at v9.0.0](https://github.com/CosmosContracts/juno/tree/v9.0.0/proto/juno)
+- [juno/proto/juno at v10.0.2](https://github.com/CosmosContracts/juno/tree/v10.0.2/proto/juno)
 - [cosmos-sdk/proto at v0.45.6](https://github.com/cosmos/cosmos-sdk/tree/v0.45.6/proto)
 - [ibc-go/proto at v3.0.0](https://github.com/cosmos/ibc-go/tree/v3.0.0/proto)
 - [tendermint/proto/tendermint at v0.34.19](https://github.com/tendermint/tendermint/tree/v0.34.19/proto/tendermint)
@@ -43,7 +43,7 @@ packages versions.
 
 ```toml
 [dependencies]
-juno-grpc-client = { version = "9.0.0", git = "https://github.com/kumanote/juno-grpc-client-rs", branch = "main" }
+juno-grpc-client = { version = "10.0.2", git = "https://github.com/kumanote/juno-grpc-client-rs", branch = "main" }
 ```
 
 **rust files**

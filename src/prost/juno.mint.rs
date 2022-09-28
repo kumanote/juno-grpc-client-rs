@@ -11,6 +11,8 @@ pub struct Minter {
     /// current annual expected provisions
     #[prost(string, tag = "4")]
     pub annual_provisions: ::prost::alloc::string::String,
+    #[prost(string, tag = "5")]
+    pub target_supply: ::prost::alloc::string::String,
 }
 /// Params holds parameters for the mint module.
 #[derive(Clone, PartialEq, ::prost::Message)]
