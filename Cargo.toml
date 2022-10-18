@@ -1,6 +1,6 @@
 [package]
 name = "juno-grpc-client"
-version = "10.0.2"
+version = "10.1.0"
 authors = ["Hiroki Tanaka <support@kumano-te.com>"]
 license = "MIT"
 edition = "2021"
