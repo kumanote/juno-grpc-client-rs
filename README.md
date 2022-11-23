@@ -9,16 +9,16 @@ This is a GRPC client package of [CosmosContracts/juno](https://github.com/Cosmo
 
 **proto files**
 
-- see [juno/go.mod at v11.0.0](https://github.com/CosmosContracts/juno/blob/v11.0.0/go.mod) for listing related
+- see [juno/go.mod at v11.0.3](https://github.com/CosmosContracts/juno/blob/v11.0.3/go.mod) for listing related
 packages versions.
-- and also [cosmos-sdk/go.mod at v0.45.9](https://github.com/cosmos/cosmos-sdk/blob/v0.45.9/go.mod)
+- and also [cosmos-sdk/go.mod at v0.45.11](https://github.com/cosmos/cosmos-sdk/blob/v0.45.11/go.mod)
 
 ---
 
-- [juno/proto/juno at v11.0.0](https://github.com/CosmosContracts/juno/tree/v11.0.0/proto/juno)
-- [cosmos-sdk/proto at v0.45.9](https://github.com/cosmos/cosmos-sdk/tree/v0.45.9/proto)
-- [ibc-go/proto at v3.3.0](https://github.com/cosmos/ibc-go/tree/v3.3.0/proto)
-- [tendermint/proto/tendermint at v0.34.21](https://github.com/tendermint/tendermint/tree/v0.34.21/proto/tendermint)
+- [juno/proto/juno at v11.0.3](https://github.com/CosmosContracts/juno/tree/v11.0.3/proto/juno)
+- [cosmos-sdk/proto at v0.45.11](https://github.com/cosmos/cosmos-sdk/tree/v0.45.11/proto)
+- [ibc-go/proto at v3.3.1](https://github.com/cosmos/ibc-go/tree/v3.3.1/proto)
+- [tendermint/proto/tendermint at v0.34.23](https://github.com/tendermint/tendermint/tree/v0.34.23/proto/tendermint)
 - [cosmos/cosmos-proto](https://github.com/cosmos/cosmos-proto/tree/main/proto/cosmos_proto)
 - [ics23/proofs.proto at v0.7.1](https://github.com/confio/ics23/blob/v0.7.1/proofs.proto)
 - [protobuf/gogo.proto at v1.3.3-alpha.regen.1](https://github.com/regen-network/protobuf/blob/v1.3.3-alpha.regen.1/gogoproto/gogo.proto)
@@ -43,7 +43,7 @@ packages versions.
 
 ```toml
 [dependencies]
-juno-grpc-client = { version = "11.0.0", git = "https://github.com/kumanote/juno-grpc-client-rs", branch = "main" }
+juno-grpc-client = { version = "11.0.3", git = "https://github.com/kumanote/juno-grpc-client-rs", branch = "main" }
 ```
 
 **rust files**

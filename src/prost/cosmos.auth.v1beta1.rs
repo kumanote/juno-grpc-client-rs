@@ -82,6 +82,18 @@ pub struct QueryParamsResponse {
     #[prost(message, optional, tag="1")]
     pub params: ::core::option::Option<Params>,
 }
+/// QueryModuleAccountByNameRequest is the request type for the Query/ModuleAccountByName RPC method.
+#[derive(Clone, PartialEq, ::prost::Message)]
+pub struct QueryModuleAccountByNameRequest {
+    #[prost(string, tag="1")]
+    pub name: ::prost::alloc::string::String,
+}
+/// QueryModuleAccountByNameResponse is the response type for the Query/ModuleAccountByName RPC method.
+#[derive(Clone, PartialEq, ::prost::Message)]
+pub struct QueryModuleAccountByNameResponse {
+    #[prost(message, optional, tag="1")]
+    pub account: ::core::option::Option<::prost_types::Any>,
+}
 /// Generated client implementations.
 pub mod query_client {
     #![allow(unused_variables, dead_code, missing_docs, clippy::let_unit_value)]
@@ -211,6 +223,29 @@ pub mod query_client {
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
                 "/cosmos.auth.v1beta1.Query/Params",
+            );
+            self.inner.unary(request.into_request(), path, codec).await
+        }
+        /// ModuleAccountByName returns the module account info by module name
+        pub async fn module_account_by_name(
+            &mut self,
+            request: impl tonic::IntoRequest<super::QueryModuleAccountByNameRequest>,
+        ) -> Result<
+            tonic::Response<super::QueryModuleAccountByNameResponse>,
+            tonic::Status,
+        > {
+            self.inner
+                .ready()
+                .await
+                .map_err(|e| {
+                    tonic::Status::new(
+                        tonic::Code::Unknown,
+                        format!("Service was not ready: {}", e.into()),
+                    )
+                })?;
+            let codec = tonic::codec::ProstCodec::default();
+            let path = http::uri::PathAndQuery::from_static(
+                "/cosmos.auth.v1beta1.Query/ModuleAccountByName",
             );
             self.inner.unary(request.into_request(), path, codec).await
         }
